@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white; /* White background */
+  margin: 0;
+  padding: 0;
+  color: black; /* Text color */
+}
+
+.container {
+  width: 100%; /* Makes the container take the full width of the screen */
+  max-width: 900px; /* Maximum width for larger screens (laptops/desktops) */
+  margin: 0 auto;
+  padding-top: 50px; /* Space from the top */
+  transition: max-width 0.3s ease; /* Smooth transition for container width */
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  color: black; /* Black color for headings */
+  font-size: 2.5rem; /* Larger heading size */
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+  background-color: #333; /* Dark background for the form */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid #444; /* Box outline for the form */
+}
+
+.form-label {
+  font-weight: bold;
+  color: white; /* White color for labels */
+}
+
+/* Input Styles */
+.form-control {
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #444; /* Box outline */
+  background-color: white; /* White background for inputs */
+  color: black; /* Black text in inputs */
+}
+
+/* Textarea Styles */
+textarea.form-control {
+  height: 120px;
+}
+
+/* Focus Effect for Inputs */
+.form-control:focus {
+  border-color: black; /* Black border color when focused */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(255, 99, 71, 0.5); /* Add glow effect */
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: orange; /* Orange background */
+  color: black; /* Black text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth transition for zoom and color */
+}
+
+button:hover {
+  background-color: yellow; /* Yellow background on hover */
+  transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 750px; /* Container is smaller on medium screens like laptops */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%; /* Full width for smaller screens like tablets and phones */
+    padding: 30px;
+    
+  }
+
+  button {
+    padding: 20px;
+    font-size: 16px; /* Slightly smaller button on mobile */
+  }
+
+  .form-control {
+    padding: 10px;
+  }
+}
+
+/* Additional Styles for React default layout */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
