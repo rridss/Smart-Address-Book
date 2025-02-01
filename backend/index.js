@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const Address = require('./address'); // Import your Address model
+const Address = require('./models/Address');
 
 // Initialize the app
 const app = express();
